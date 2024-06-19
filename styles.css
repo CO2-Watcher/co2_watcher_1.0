@@ -1,0 +1,50 @@
+.logo {
+  width: 100%; /* Breite */
+  max-width: 500px; /* Maximale Breite */
+  height: auto; /* Automatische Anpassung Höhe */
+}
+
+.page-title {
+  text-align: center; /* Titel zentrieren */
+  margin-top: 70px; /* Abstand nach oben */
+  font-size: 2em; /* Schriftgröße */
+  color: rgb(107, 107, 107); /* Textfarbe */
+  word-wrap: break-word; /* Zeilenumbruch*/
+}
+
+header nav {
+  background-color: rgb(28, 171, 254);
+}
+
+h2 {
+  font-size: 2.5em; /* Schriftgröße Überschriften */
+}
+
+.section.menu {
+  border: 2px solid rgb(221, 221, 221); /* Rahmenlinie */
+  border-radius: 5px; /* Ecken */
+  padding: 10px; /* Innenabstand */
+}
+
+.section.menu li a {
+  display: block; /* Blockelemente*/
+  padding: 5px; /* Innenabstand*/
+  color: rgb(51, 51, 51); /* Textfarbe */
+}
+
+footer.page-footer {
+  background-color: rgb(28, 171, 254);
+}
+
+.page-footer h5 {
+  font-size: 1.2em; /* Schriftgröße Fußzeile */
+}
+
+table {
+  width: 100%; /* Tabelle Breite */
+  table-layout: auto; /* Aut. Tabellenlayout */
+  overflow-x: auto; /* Horizontal Scrollen*/
+  display: block; /* Block-Anzeige*/
+}
+
+

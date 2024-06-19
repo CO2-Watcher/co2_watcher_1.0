@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CO2 Emissionen Dashboard</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" data-target="mobile-menu" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <a href="#" class="brand-logo"></a>
+        <img src="https://i.ibb.co/zG3D9ph/logo.png" alt="Logo" class="logo">
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">Über uns</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contact">Kontakt</a></li>
+          <li><a href="#imprint">Impressum</a></li>
+        </ul>
+      </div>
+    </nav>
+    <h1 class="page-title">Vergleichstabellen für Länder und Unternehmen</h1>
+  </header>
+
+  <ul class="sidenav" id="mobile-menu">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">Über uns</a></li>
+    <li><a href="#blog">Blog</a></li>
+    <li><a href="#contact">Kontakt</a></li>
+    <li><a href="#imprint">Impressum</a></li>
+  </ul>
+  
+  <div class="container">
+    <div class="row">
+      <div class="col s12 m4 l3">
+        <ul class="section menu">
+          <li><a href="#was-ist-co2">Was ist CO2?</a></li>
+          <li><a href="#co2-sparen">CO2 sparen</a></li>
+          <li><a href="#co2-preis">CO2-Preis</a></li>
+          <li><a href="#klimawandel">Klimawandel</a></li>
+          <li><a href="#klimabilanz">Klimabilanz</a></li>
+        </ul>
+      </div>
+     
+      <div class="col s12 m8 l9">
+        <div id="content">
+          
+          <h2>CO2 Emissionen von Ländern</h2>
+          <div class="input-field">
+            <input id="searchCountry" type="text" class="validate"
+            oninput="sanitizeInput(this)">
+            <label for="searchCountry">Suche nach Land</label>
+          </div>
+          <table class="highlight">
+            <thead>
+              <tr>
+                <th><a href="#" id="sortByName">Land</a></th>
+                <th><a href="#" id="sortByEmission">Anteil am weltweiten CO2-Ausstoß in %</a></th>
+                <th><a href="#" id="sortByCO2">CO2-Emissionen in Mio. t</a></th>
+                <th><a href="#" id="sortByPerCapita">CO2-Emissionen pro Kopf in Tonnen</a></th>
+                <th><a href="#" id="sortByPopulation">Bevölkerung</a></th>
+              </tr>
+            </thead>
+            <tbody id="table-body">
+            </tbody>
+          </table>
+
+          <h2>CO2 Emissionen von Unternehmen</h2>
+          <div class="input-field">
+            <input id="searchCompany" type="text" class="validate"
+            oninput="sanitizeInput(this)">
+            <label for="searchCompany">Suche nach Unternehmen</label>
+          </div>
+          <table class="highlight">
+            <thead>
+              <tr>
+                <th><a href="#" id="sortByCompanyName">Unternehmen</a></th>
+                <th><a href="#" id="sortByCompanyCountry">Land</a></th>
+                <th><a href="#" id="sortByCompanyEmission">Anteil am weltweiten CO2-Ausstoß in %</a></th>
+                <th><a href="#" id="sortByCompanyCO2">CO2-Emissionen in Mio. t</a></th>
+                <th><a href="#" id="sortByEmployees">Mitarbeiter</a></th>
+              </tr>
+            </thead>
+            <tbody id="company-table-body">
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">CO2-Watcher</h5>
+          <p class="text">
+            <a href="#imprint" class="white-text">Impressum</a> |
+            <a href="#datenschutz" class="white-text">Datenschutzrichtlinie</a> |
+            <a href="#agb" class="white-text">Nutzungsbedingungen (AGB)</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
